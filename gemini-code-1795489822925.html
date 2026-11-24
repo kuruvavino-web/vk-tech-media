@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Tech Media Digital Marketing | Performance, Affiliate &amp; Influencer Agency</title>
+    <meta name="description" content="VK Tech Media Digital Marketing is an MSME &amp; GST-registered performance marketing, regional influencer network, and affiliate user-acquisition agency in Andhra Pradesh, India.">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #1e3a8a;
+            --accent: #2563eb;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.65;
+            background-color: #ffffff;
+        }
+        header {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #1e293b;
+        }
+        .brand {
+            display: flex;
+            flex-direction: column;
+        }
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            color: #ffffff;
+        }
+        .brand-sub {
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 0.3rem;
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #2563eb 100%);
+            color: #ffffff;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            margin-bottom: 1.2rem;
+            color: #e0e7ff;
+        }
+        .hero h1 {
+            font-size: 2.35rem;
+            max-width: 850px;
+            margin: 0 auto 1rem;
+            line-height: 1.25;
+        }
+        .hero p {
+            max-width: 760px;
+            margin: 0 auto 2rem;
+            font-size: 1.08rem;
+            color: #e2e8f0;
+        }
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: #ffffff;
+            color: var(--primary);
+            padding: 0.8rem 1.8rem;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: #ffffff;
+            padding: 0.8rem 1.8rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        section {
+            padding: 4rem 5%;
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .section-title {
+            color: var(--primary);
+            font-size: 1.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .section-desc {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.6rem;
+        }
+        .card h3 {
+            color: var(--secondary);
+            margin-bottom: 0.6rem;
+            font-size: 1.15rem;
+        }
+        .card p, .card li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .card ul {
+            margin-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .cred-item span {
+            display: block;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            color: #1d4ed8;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .cred-item strong {
+            font-size: 0.98rem;
+            color: var(--primary);
+        }
+        .workflow-box {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 1rem;
+        }
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        .step {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.2rem;
+        }
+        .step-num {
+            display: inline-block;
+            background: var(--accent);
+            color: #ffffff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 26px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+        }
+        .policies-wrapper {
+            background: var(--bg-light);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 4rem 5%;
+        }
+        .policies-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        .policy-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+        .policy-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.6rem;
+        }
+        .policy-card ul {
+            margin-left: 1.4rem;
+            color: var(--text-muted);
+            font-size: 0.94rem;
+        }
+        .policy-card li {
+            margin-bottom: 0.4rem;
+        }
+        footer {
+            background: var(--primary);
+            color: #cbd5e1;
+            padding: 3rem 5% 2rem;
+            font-size: 0.92rem;
+        }
+        .footer-grid {
+            max-width: 1160px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        footer h4 {
+            color: #ffffff;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+        footer p {
+            margin-bottom: 0.35rem;
+            color: #94a3b8;
+        }
+        .footer-bottom {
+            max-width: 1160px;
+            margin: 2rem auto 0;
+            padding-top: 1.2rem;
+            border-top: 1px solid #1e293b;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="brand">
+        <span class="brand-name">VK TECH MEDIA DIGITAL MARKETING</span>
+        <span class="brand-sub">MSME &amp; GST Registered Performance &amp; Influencer Agency</span>
+    </div>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#payout-model">Operations &amp; Payouts</a>
+        <a href="#policies">Legal Policies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="hero-badge">Official Agency Portal • GSTIN: 37OVVPK4684L1Z5 • SAC: 998361</div>
+    <h1>Scalable Performance Marketing, Regional Influencer Networks &amp; Verified User Acquisition</h1>
+    <p>VK Tech Media Digital Marketing connects leading financial, fintech, and consumer brands with high-converting regional creators and verified end-users across India.</p>
+    <div class="hero-actions">
+        <a href="#services" class="btn-primary">Explore Our Services</a>
+        <a href="#contact" class="btn-outline">Contact &amp; Compliance Desk</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2 class="section-title">About VK Tech Media Digital Marketing</h2>
+    <p class="section-desc">
+        Founded by Proprietor <strong>Kuruva Vinod Kumar</strong> and headquartered in Pattikonda, Kurnool District, Andhra Pradesh, <strong>VK Tech Media Digital Marketing</strong> (also operating as <strong>VK Tech Media</strong>) is a registered digital advertising and affiliate marketing agency. We execute measurable CPA, CPS, CPC, and cost-per-reel campaigns across Instagram and YouTube in Telugu, Kannada, Hindi, and Malayalam.
+    </p>
+
+    <div class="credentials-grid">
+        <div class="cred-item">
+            <span>Legal Business Name</span>
+            <strong>VK TECH MEDIA DIGITAL MARKETING</strong>
+        </div>
+        <div class="cred-item">
+            <span>Constitution &amp; Proprietor</span>
+            <strong>Sole Proprietorship — Kuruva Vinod Kumar</strong>
+        </div>
+        <div class="cred-item">
+            <span>MSME / Udyam Registration</span>
+            <strong>UDYAM-AP-07-0112433 (NIC 73100)</strong>
+        </div>
+        <div class="cred-item">
+            <span>GSTIN &amp; Service Code</span>
+            <strong>37OVVPK4684L1Z5 | SAC: 998361</strong>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">What We Do — Core Services</h2>
+    <p class="section-desc">We operate performance-driven digital marketing workflows backed by S2S attribution tracking, verified lead validation, and transparent tax-compliant settlements.</p>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>1. Performance &amp; Affiliate Marketing</h3>
+            <p>End-to-end customer acquisition (CPA / CPS / CPC) for SEBI-registered brokerage platforms, digital banking, credit/EMI cards, and consumer applications.</p>
+            <ul>
+                <li>Verified KYC &amp; account activation campaigns</li>
+                <li>Server-to-Server (S2S) postback conversion tracking</li>
+                <li>Real-time lead reconciliation &amp; quality audits</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>2. Regional Influencer Marketing</h3>
+            <p>Managed creator partnerships across South and North India producing high-engagement short-form Reels and YouTube integrations.</p>
+            <ul>
+                <li>Curated network across Telugu, Kannada, Hindi &amp; Malayalam</li>
+                <li>Transparent creator invoicing &amp; milestone settlements</li>
+                <li>Brand-safe scripts &amp; compliance-reviewed creatives</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>3. Promotional User Rewards &amp; Cashback</h3>
+            <p>Targeted promotional reward programs where verified end-users receive direct cashback incentives after completing partner onboarding milestones.</p>
+            <ul>
+                <li>Automated UPI / IMPS reward disbursements</li>
+                <li>Strict duplicate &amp; KYC verification checks</li>
+                <li>Complete digital audit trail for every payout</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="payout-model">
+    <h2 class="section-title">How Our Campaign &amp; Payout Operations Work</h2>
+    <p class="section-desc">Our payment disbursement workflow is built strictly for verified creator settlements and approved promotional user rewards.</p>
+    <div class="workflow-box">
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h4>Campaign Execution</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">Partner creators publish approved brand campaigns on Instagram and YouTube with tracked attribution links.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h4>Conversion Verification</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">Leads are validated against official advertiser/network conversion reports (KYC / UCC / Card activation).</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h4>Compliance &amp; Tax Check</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">Creator invoices (SAC 998361, PAN, bank verification) and user reward eligibility are verified in our ledger.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h4>Bank / UPI Disbursement</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">Approved creator payouts and promotional user rewards are settled via regulated bank/UPI payout rails.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="policies-wrapper" id="policies">
+    <div class="policies-inner">
+        <h2 class="section-title">Legal, Privacy &amp; Payout Policies</h2>
+        <p class="section-desc">Transparent governance policies for advertisers, affiliate creators, and promotional campaign participants.</p>
+
+        <div class="policy-card" id="terms">
+            <h3>1. Terms &amp; Conditions</h3>
+            <ul>
+                <li>All marketing campaigns executed by VK Tech Media Digital Marketing are governed by formal Insertion Orders (IOs) and official attribution reports from partner advertisers.</li>
+                <li>Creator commissions and service fees are payable only upon verified conversion delivery and submission of valid billing details (PAN, Bank Account/UPI, and SAC 998361 invoice).</li>
+                <li>Promotional cashback or user rewards are offered strictly as a marketing incentive upon successful verification of the required campaign milestone (such as completed KYC or account activation).</li>
+                <li>Any fraudulent, self-referred, duplicate, or policy-violating traffic will be disqualified without payout.</li>
+            </ul>
+        </div>
+
+        <div class="policy-card" id="privacy">
+            <h3>2. Privacy Policy</h3>
+            <ul>
+                <li><strong>Data Collected:</strong> We collect essential business and beneficiary information including Name, Mobile Number, Email Address, PAN (for tax compliance), and Bank Account / UPI ID solely for campaign attribution, GST/TDS accounting, and payout processing.</li>
+                <li><strong>Data Protection:</strong> We never sell, rent, or share personal or financial details of creators, clients, or campaign users with unauthorized third parties.</li>
+                <li><strong>Secure Processing:</strong> All disbursements are routed through RBI-regulated banking and payment gateway partners with complete transaction reference tracking.</li>
+            </ul>
+        </div>
+
+        <div class="policy-card" id="refund">
+            <h3>3. Payout, Refund &amp; Cancellation Policy</h3>
+            <ul>
+                <li><strong>Settlement Timeline:</strong> Verified influencer settlements and approved user cashback rewards are processed within 2 to 7 business days following conversion confirmation.</li>
+                <li><strong>Failed / Reversed Payouts:</strong> If a transfer fails due to an invalid UPI ID or bank detail entered by a beneficiary, the payout is re-initiated once updated details are verified.</li>
+                <li><strong>Advertiser Cancellations &amp; Refunds:</strong> Client campaign advances, GST components, and unutilized budgets are reconciled and refunded or adjusted strictly according to the signed campaign agreement.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer id="contact">
+    <div class="footer-grid">
+        <div>
+            <h4>VK TECH MEDIA DIGITAL MARKETING</h4>
+            <p>Proprietor: Kuruva Vinod Kumar</p>
+            <p>MSME Udyam: UDYAM-AP-07-0112433</p>
+            <p>GSTIN: 37OVVPK4684L1Z5</p>
+            <p>Service Classification: SAC 998361 (Advertising Services)</p>
+        </div>
+        <div>
+            <h4>Registered Office Address</h4>
+            <p>Door No. 10-96, Ground Floor,</p>
+            <p>Kondageri, Chakralla Road (Old Peta),</p>
+            <p>Pattikonda, Kurnool District,</p>
+            <p>Andhra Pradesh – 518380, India</p>
+        </div>
+        <div>
+            <h4>Contact &amp; Compliance Support</h4>
+            <p>Email: kkuruvavinod@gmail.com</p>
+            <p>Phone: +91 6302825369 / +91 9705630282</p>
+            <p>Business Hours: Monday – Saturday, 10:00 AM – 6:30 PM IST</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 VK Tech Media Digital Marketing. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
